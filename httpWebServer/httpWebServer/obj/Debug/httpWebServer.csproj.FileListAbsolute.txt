@@ -1,0 +1,5 @@
+H:\project\VS2010\Learn\httpWebServer\httpWebServer\bin\Debug\httpWebServer.dll
+H:\project\VS2010\Learn\httpWebServer\httpWebServer\bin\Debug\httpWebServer.pdb
+H:\project\VS2010\Learn\httpWebServer\httpWebServer\obj\Debug\ResolveAssemblyReference.cache
+H:\project\VS2010\Learn\httpWebServer\httpWebServer\obj\Debug\httpWebServer.dll
+H:\project\VS2010\Learn\httpWebServer\httpWebServer\obj\Debug\httpWebServer.pdb
