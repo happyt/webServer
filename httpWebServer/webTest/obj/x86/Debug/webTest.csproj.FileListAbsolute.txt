@@ -16,3 +16,5 @@ H:\project\VS2010\Learn\httpWebServer\webTest\bin\Debug\web\images\60x36px_butto
 H:\project\VS2010\Learn\httpWebServer\webTest\bin\Debug\web\images\BlueBar.png
 H:\project\VS2010\Learn\httpWebServer\webTest\bin\Debug\web\images\jack.jpg
 H:\project\VS2010\Learn\httpWebServer\webTest\bin\Debug\web\favicon.ico
+H:\project\VS2010\git\csharp\csharp\httpWebServer\webTest\obj\x86\Debug\webTest.exe
+H:\project\VS2010\git\csharp\csharp\httpWebServer\webTest\obj\x86\Debug\webTest.pdb

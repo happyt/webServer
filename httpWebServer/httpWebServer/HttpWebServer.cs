@@ -16,8 +16,11 @@ namespace httpWebServer
 
     public class HttpWebServer
     {
+        // The version of the web server
+        public string version = "1.0";
+
         /// <summary>
-        /// SOme pages for reference chat
+        /// Some pages for reference chat
         /// http://stackoverflow.com/questions/427326/httplistener-server-header-c
         /// http://msdn.microsoft.com/en-us/library/system.net.httplistener.aspx
         /// http://www.dreamincode.net/forums/topic/215467-c%23-httplistener-and-threading/
