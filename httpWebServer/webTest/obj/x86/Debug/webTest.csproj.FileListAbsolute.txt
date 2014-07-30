@@ -70,3 +70,6 @@ D:\backup\h drive\project\VS2012\Learn\httpWebServer\webTest\obj\x86\Debug\webTe
 D:\backup\h drive\project\VS2012\Learn\httpWebServer\webTest\obj\x86\Debug\webTest.frmMain.resources
 D:\backup\h drive\project\VS2012\Learn\httpWebServer\webTest\obj\x86\Debug\webTest.Properties.Resources.resources
 D:\backup\h drive\project\VS2012\Learn\httpWebServer\webTest\obj\x86\Debug\webTest.csproj.GenerateResource.Cache
+C:\GitHub\webServer\httpWebServer\webTest\bin\Debug\webTest.exe.config
+C:\GitHub\webServer\httpWebServer\webTest\obj\x86\Debug\webTest.exe
+C:\GitHub\webServer\httpWebServer\webTest\obj\x86\Debug\webTest.pdb
