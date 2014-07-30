@@ -16,5 +16,57 @@ H:\project\VS2010\Learn\httpWebServer\webTest\bin\Debug\web\images\60x36px_butto
 H:\project\VS2010\Learn\httpWebServer\webTest\bin\Debug\web\images\BlueBar.png
 H:\project\VS2010\Learn\httpWebServer\webTest\bin\Debug\web\images\jack.jpg
 H:\project\VS2010\Learn\httpWebServer\webTest\bin\Debug\web\favicon.ico
-H:\project\VS2010\git\csharp\csharp\httpWebServer\webTest\obj\x86\Debug\webTest.exe
-H:\project\VS2010\git\csharp\csharp\httpWebServer\webTest\obj\x86\Debug\webTest.pdb
+C:\Project\VS2012\httpWebServer\webTest\obj\x86\Debug\webTest.csprojResolveAssemblyReference.cache
+C:\Project\VS2012\httpWebServer\webTest\obj\x86\Debug\webTest.Form1.resources
+C:\Project\VS2012\httpWebServer\webTest\obj\x86\Debug\webTest.Properties.Resources.resources
+C:\Project\VS2012\httpWebServer\webTest\obj\x86\Debug\webTest.csproj.GenerateResource.Cache
+C:\Project\VS2012\httpWebServer\webTest\bin\Debug\webTest.exe.config
+C:\Project\VS2012\httpWebServer\webTest\bin\Debug\web\css\style.css
+C:\Project\VS2012\httpWebServer\webTest\bin\Debug\web\default.htm
+C:\Project\VS2012\httpWebServer\webTest\bin\Debug\web\favicon.ico
+C:\Project\VS2012\httpWebServer\webTest\bin\Debug\web\images\60x36px_button.gif
+C:\Project\VS2012\httpWebServer\webTest\bin\Debug\web\images\BlueBar.png
+C:\Project\VS2012\httpWebServer\webTest\bin\Debug\web\images\jack.jpg
+C:\Project\VS2012\httpWebServer\webTest\bin\Debug\web\scripts\basic.js
+C:\Project\VS2012\httpWebServer\webTest\bin\Debug\webTest.exe
+C:\Project\VS2012\httpWebServer\webTest\bin\Debug\webTest.pdb
+C:\Project\VS2012\httpWebServer\webTest\bin\Debug\httpWebServer.dll
+C:\Project\VS2012\httpWebServer\webTest\bin\Debug\httpWebServer.pdb
+C:\Project\VS2012\httpWebServer\webTest\obj\x86\Debug\webTest.exe
+C:\Project\VS2012\httpWebServer\webTest\obj\x86\Debug\webTest.pdb
+E:\project\Components\httpWebServer\webTest\obj\x86\Debug\webTest.csprojResolveAssemblyReference.cache
+E:\project\Components\httpWebServer\webTest\obj\x86\Debug\webTest.frmMain.resources
+E:\project\Components\httpWebServer\webTest\obj\x86\Debug\webTest.Properties.Resources.resources
+E:\project\Components\httpWebServer\webTest\obj\x86\Debug\webTest.csproj.GenerateResource.Cache
+E:\project\Components\httpWebServer\webTest\bin\Debug\web\css\style.css
+E:\project\Components\httpWebServer\webTest\bin\Debug\web\default.htm
+E:\project\Components\httpWebServer\webTest\bin\Debug\web\favicon.ico
+E:\project\Components\httpWebServer\webTest\bin\Debug\web\images\60x36px_button.gif
+E:\project\Components\httpWebServer\webTest\bin\Debug\web\images\BlueBar.png
+E:\project\Components\httpWebServer\webTest\bin\Debug\web\images\jack.jpg
+E:\project\Components\httpWebServer\webTest\bin\Debug\web\scripts\basic.js
+E:\project\Components\httpWebServer\webTest\bin\Debug\webTest.exe.config
+E:\project\Components\httpWebServer\webTest\bin\Debug\webTest.exe
+E:\project\Components\httpWebServer\webTest\bin\Debug\webTest.pdb
+E:\project\Components\httpWebServer\webTest\bin\Debug\httpWebServer.dll
+E:\project\Components\httpWebServer\webTest\bin\Debug\httpWebServer.pdb
+E:\project\Components\httpWebServer\webTest\obj\x86\Debug\webTest.exe
+E:\project\Components\httpWebServer\webTest\obj\x86\Debug\webTest.pdb
+D:\backup\h drive\project\VS2012\Learn\httpWebServer\webTest\bin\Debug\webTest.exe.config
+D:\backup\h drive\project\VS2012\Learn\httpWebServer\webTest\obj\x86\Debug\webTest.exe
+D:\backup\h drive\project\VS2012\Learn\httpWebServer\webTest\obj\x86\Debug\webTest.pdb
+D:\backup\h drive\project\VS2012\Learn\httpWebServer\webTest\bin\Debug\web\css\style.css
+D:\backup\h drive\project\VS2012\Learn\httpWebServer\webTest\bin\Debug\web\default.htm
+D:\backup\h drive\project\VS2012\Learn\httpWebServer\webTest\bin\Debug\web\favicon.ico
+D:\backup\h drive\project\VS2012\Learn\httpWebServer\webTest\bin\Debug\web\images\60x36px_button.gif
+D:\backup\h drive\project\VS2012\Learn\httpWebServer\webTest\bin\Debug\web\images\BlueBar.png
+D:\backup\h drive\project\VS2012\Learn\httpWebServer\webTest\bin\Debug\web\images\jack.jpg
+D:\backup\h drive\project\VS2012\Learn\httpWebServer\webTest\bin\Debug\web\scripts\basic.js
+D:\backup\h drive\project\VS2012\Learn\httpWebServer\webTest\bin\Debug\webTest.exe
+D:\backup\h drive\project\VS2012\Learn\httpWebServer\webTest\bin\Debug\webTest.pdb
+D:\backup\h drive\project\VS2012\Learn\httpWebServer\webTest\bin\Debug\httpWebServer.dll
+D:\backup\h drive\project\VS2012\Learn\httpWebServer\webTest\bin\Debug\httpWebServer.pdb
+D:\backup\h drive\project\VS2012\Learn\httpWebServer\webTest\obj\x86\Debug\webTest.csprojResolveAssemblyReference.cache
+D:\backup\h drive\project\VS2012\Learn\httpWebServer\webTest\obj\x86\Debug\webTest.frmMain.resources
+D:\backup\h drive\project\VS2012\Learn\httpWebServer\webTest\obj\x86\Debug\webTest.Properties.Resources.resources
+D:\backup\h drive\project\VS2012\Learn\httpWebServer\webTest\obj\x86\Debug\webTest.csproj.GenerateResource.Cache

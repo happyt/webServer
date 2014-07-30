@@ -3,3 +3,17 @@ H:\project\VS2010\Learn\httpWebServer\httpWebServer\bin\Debug\httpWebServer.pdb
 H:\project\VS2010\Learn\httpWebServer\httpWebServer\obj\Debug\ResolveAssemblyReference.cache
 H:\project\VS2010\Learn\httpWebServer\httpWebServer\obj\Debug\httpWebServer.dll
 H:\project\VS2010\Learn\httpWebServer\httpWebServer\obj\Debug\httpWebServer.pdb
+C:\Project\VS2012\httpWebServer\httpWebServer\bin\Debug\httpWebServer.dll
+C:\Project\VS2012\httpWebServer\httpWebServer\bin\Debug\httpWebServer.pdb
+C:\Project\VS2012\httpWebServer\httpWebServer\obj\Debug\httpWebServer.dll
+C:\Project\VS2012\httpWebServer\httpWebServer\obj\Debug\httpWebServer.pdb
+E:\project\Components\httpWebServer\httpWebServer\bin\Debug\httpWebServer.dll
+E:\project\Components\httpWebServer\httpWebServer\bin\Debug\httpWebServer.pdb
+E:\project\Components\httpWebServer\httpWebServer\obj\Debug\httpWebServer.dll
+E:\project\Components\httpWebServer\httpWebServer\obj\Debug\httpWebServer.pdb
+E:\project\Components\httpWebServer\httpWebServer\obj\Debug\httpWebServer.csprojResolveAssemblyReference.cache
+D:\backup\h drive\project\VS2012\Learn\httpWebServer\httpWebServer\bin\Debug\httpWebServer.dll
+D:\backup\h drive\project\VS2012\Learn\httpWebServer\httpWebServer\bin\Debug\httpWebServer.pdb
+D:\backup\h drive\project\VS2012\Learn\httpWebServer\httpWebServer\obj\Debug\httpWebServer.csprojResolveAssemblyReference.cache
+D:\backup\h drive\project\VS2012\Learn\httpWebServer\httpWebServer\obj\Debug\httpWebServer.dll
+D:\backup\h drive\project\VS2012\Learn\httpWebServer\httpWebServer\obj\Debug\httpWebServer.pdb

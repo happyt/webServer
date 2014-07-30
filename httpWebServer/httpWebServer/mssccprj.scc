@@ -1,5 +1,0 @@
-SCC = This is a Source Code Control file
-
-[httpWebServer.csproj]
-SCC_Aux_Path = "\\chibcfs01\TheSource\Apps\VSS2005"
-SCC_Project_Name = "$/Engineering/httpWebServer.root/httpWebServer/httpWebServer", WCACAAAA

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout>
+<button>
+<x>20</x>
+<y>20</y>
+<type>pulse</type>
+<code>C1</code>
+</button>
+<button>
+<x>200</x>
+<y>200</y>
+<type>scene</type>
+<code>17</code>
+</button>
+</layout>
