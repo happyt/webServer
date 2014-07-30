@@ -2,7 +2,9 @@ Updated web server project
 
 Look at the blog to see more info. http://happyt.wordpress.com
 
-THis is a simple build for a DLL the opens up a httpListener object. This object will then serve up common web files from a directory, but will also fire events to a containing application to enable it to respond with JSON or XML data. It can also fire an event with no response, to handle commands being sent to the application.
+This is a simple build for a DLL that opens up a httpListener object. This object will then serve up common web files from a directory, but will also fire events to a containing application to enable it to respond with JSON or XML data. It can also fire an event with no response, to handle commands being sent to the application.
 
 Written in 2010 initially, updated to .Net 4.5 now.
+
+More examples of serving JSON, XML, txt data from host application.
 
