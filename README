@@ -8,3 +8,5 @@ Written in 2010 initially, updated to .Net 4.5 now.
 
 More examples of serving JSON, XML, txt data from host application.
 
+v2.0.2 Added some mime types that I needed.
+
