@@ -1,0 +1,5 @@
+C:\GitHub\webServer\httpWebServer\httpWebServer\bin\Release\httpWebServer.dll
+C:\GitHub\webServer\httpWebServer\httpWebServer\bin\Release\httpWebServer.pdb
+C:\GitHub\webServer\httpWebServer\httpWebServer\obj\Release\httpWebServer.csprojResolveAssemblyReference.cache
+C:\GitHub\webServer\httpWebServer\httpWebServer\obj\Release\httpWebServer.dll
+C:\GitHub\webServer\httpWebServer\httpWebServer\obj\Release\httpWebServer.pdb

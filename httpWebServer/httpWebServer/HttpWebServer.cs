@@ -17,13 +17,17 @@ namespace httpWebServer
     public class HttpWebServer
     {
         /// <summary>
-        /// SOme pages for reference chat
+        /// Simple web server dll, to be self hosted in a parent application
+        /// Full source at https://github.com/happyt/webServer
+        /// 
+        /// Some pages for reference chat
         /// http://stackoverflow.com/questions/427326/httplistener-server-header-c
         /// http://msdn.microsoft.com/en-us/library/system.net.httplistener.aspx
         /// http://www.dreamincode.net/forums/topic/215467-c%23-httplistener-and-threading/
 
        
         /// </summary>
+        private string info = "Full source at https://github.com/happyt/webServer";
 
         private HttpListener listener;
         public string portNumber = "8081";
@@ -130,13 +134,14 @@ namespace httpWebServer
                 case (".jpeg"):
                 case (".gif"):
                 case (".ico"):
+                case (".tiff"):
                     responseType = "image/" + filetype.Substring(1);    // leave off the decimal point
                     binary = true;
                     break;
 
                 case (".htm"):
                 case (".html"):
-                case (".css"):
+                case (".htmls"):
                     responseType = "text/html";
                     binary = false;
                     break;
@@ -148,6 +153,7 @@ namespace httpWebServer
 
                 case (".xml"):
                 case (".txt"):
+                case (".css"):
                     responseType = "text/" + filetype.Substring(1);    // leave off the decimal point
                     binary = false;
                     break;

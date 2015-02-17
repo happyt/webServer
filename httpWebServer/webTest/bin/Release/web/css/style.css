@@ -1,0 +1,16 @@
+h2 {
+	color: white;
+	position: absolute;
+	left: 3%;
+	top: -0.5%;
+}
+
+body {
+font-size: 100%;
+font-family: "Lucida Grande", Verdana, Arial, Sans-Serif;
+color: #202020;
+}
+
+p {
+	font-size: 12px;
+}
