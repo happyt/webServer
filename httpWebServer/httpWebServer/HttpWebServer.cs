@@ -133,7 +133,6 @@ namespace httpWebServer
                 case (".jpg"):
                 case (".jpeg"):
                 case (".gif"):
-                case (".ico"):
                 case (".tiff"):
                     responseType = "image/" + filetype.Substring(1);    // leave off the decimal point
                     binary = true;
@@ -148,6 +147,11 @@ namespace httpWebServer
 
                 case (".js"):
                     responseType = "application/javascript";
+                    binary = false;
+                    break;
+
+                case (".ico"):
+                    responseType = "image/x-icon";
                     binary = false;
                     break;
 
