@@ -167,6 +167,11 @@ namespace httpWebServer
                     binary = false;
                     break;
 
+                case (".cachemanifest"):
+                    responseType = " text/cache-manifest";
+                    binary = false;
+                    break;
+
                 default:
                     break;
             }
