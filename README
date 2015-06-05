@@ -12,5 +12,5 @@ v2.0.2 Added some mime types that I needed.
 v2.0.3 More mime types...?
 v2.0.4 Added  case (".cachemanifest"):
                     responseType = " text/cache-manifest";.
-
+v2.0.5 Oops...wasn't setting binary for my icons
 

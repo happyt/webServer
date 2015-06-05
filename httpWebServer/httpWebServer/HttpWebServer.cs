@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlTypes;
 using System.Linq;
 using System.Text;
 using System.Net;
@@ -152,7 +153,7 @@ namespace httpWebServer
 
                 case (".ico"):
                     responseType = "image/x-icon";
-                    binary = false;
+                    binary = true;
                     break;
 
                 case (".xml"):
