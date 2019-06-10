@@ -14,3 +14,5 @@ v2.0.4 Added  case (".cachemanifest"):
                     responseType = " text/cache-manifest";.
 v2.0.5 Oops...wasn't setting binary for my icons.
 
+v3.0.6 Newer version with some changes over last year or two
+	

@@ -17,3 +17,9 @@ D:\backup\h drive\project\VS2012\Learn\httpWebServer\httpWebServer\bin\Debug\htt
 D:\backup\h drive\project\VS2012\Learn\httpWebServer\httpWebServer\obj\Debug\httpWebServer.csprojResolveAssemblyReference.cache
 D:\backup\h drive\project\VS2012\Learn\httpWebServer\httpWebServer\obj\Debug\httpWebServer.dll
 D:\backup\h drive\project\VS2012\Learn\httpWebServer\httpWebServer\obj\Debug\httpWebServer.pdb
+C:\project\dotNet\httpWebServer\httpWebServer\httpWebServer\bin\Debug\httpWebServer.dll
+C:\project\dotNet\httpWebServer\httpWebServer\httpWebServer\bin\Debug\httpWebServer.pdb
+C:\project\dotNet\httpWebServer\httpWebServer\httpWebServer\obj\Debug\httpWebServer.csproj.CoreCompileInputs.cache
+C:\project\dotNet\httpWebServer\httpWebServer\httpWebServer\obj\Debug\httpWebServer.dll
+C:\project\dotNet\httpWebServer\httpWebServer\httpWebServer\obj\Debug\httpWebServer.pdb
+C:\project\dotNet\httpWebServer\httpWebServer\httpWebServer\obj\Debug\httpWebServer.csprojAssemblyReference.cache

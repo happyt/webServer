@@ -13,6 +13,7 @@ namespace webTest
         /// For browser status page
         /// </summary>
         private HttpWebServer http;
+        Dictionary<string, string> @params = new Dictionary<string, string>();
 
         private List<score> scoring = new List<score>();
 
@@ -71,10 +72,10 @@ namespace webTest
                 {
                     http = new HttpWebServer();
                     http.portNumber = "8081";
-                    http.MessageHandler = http_ProcessMessage;
+                    http.DataHandler = http_ReturnData;
+                    http.CommandHandler = http_ProcessCommand;
                     http.Start();
                     btnStartStop.Text = "Stop http";
-                    http.controlMessage += new clientEventHandler(http_controlMessage);
                 }
                 else
                 {
@@ -85,6 +86,24 @@ namespace webTest
             catch (Exception ex)
             {
                 MessageBox.Show("Closing http error: " + ex.Message);
+            }
+        }
+
+        public void SplitParameters(string paramString)
+        {
+            string[] parameters = paramString.Split('&');
+            @params.Clear();
+
+            if (parameters.Count() > 0)
+            {
+                foreach (string s in parameters)
+                {
+                    string[] a = s.Split('=');
+                    if (a.Count() == 2)
+                    {
+                        @params.Add(a[0], a[1]);
+                    }
+                }
             }
         }
 
@@ -100,45 +119,36 @@ namespace webTest
         //    SS.StatusMessage += new SocketEventHandler(StatusEvent);
         //    SS.ReplyMessage += new SocketEventHandler(ReplyEvent);
 
-        private string http_ProcessMessage(string webMethod, string message)
+        private string http_ReturnData(string webMethod, string message)
         {
             string processedMessage = message;
             SetStatus("Received:" + message);
+            string outputString = "";
+            string fileString = message;    // default
 
-            // ========================================
-            // process the application file type here
-            // ========================================
-            //
             int n = message.IndexOf("?");
-            string fileString = message.Substring(0, n).Replace("//",String.Empty);
+            if (n>0)
+            {
+                fileString = message.Substring(0, n).Replace("//", String.Empty);
+            }
 
             // get parameters, if there, or empty string
             string paramString = message.Substring(n + 1);
-            string[] parameters = paramString.Split('&');
-            string outputString = "";
-
-            Dictionary<string, string> dictionary = new Dictionary<string, string>();
-            if (parameters.Count() > 0)
-            {
-                foreach (string s in parameters)
-                {
-                    string[] a = s.Split('=');
-                    if (a.Count() == 2)
-                    {
-                        dictionary.Add(a[0], a[1]);
-                    }
-                }
-            }
+            SplitParameters(paramString);
 
             int chosen = 0;
             bool notFound = true;
 
-            if (dictionary.ContainsKey("name")) {
-                // find the entry
-                int p = 0;
-                string searchName = dictionary["name"];
+            // Simple example storing and retrieving score items from a list
 
-                while (p < scoring.Count() && notFound) {
+            if (@params.ContainsKey("name"))            // example code for "abc.json?name=Smith
+            {
+                // find the entry, return the scores
+                int p = 0;
+                string searchName = @params["name"];
+
+                while (p < scoring.Count() && notFound)
+                {
 
                     if (scoring[p].name == searchName)
                     {
@@ -149,26 +159,26 @@ namespace webTest
                     {
                         p++;
                     }
-                } 
+                }
             }
 
             int v = 0;
             if (notFound)
             {
                 // add an entry , usually would use POST, but just add if don't find it
-                
-                if (parameters.Count() > 2 && dictionary.ContainsKey("value") && dictionary.ContainsKey("scores")) 
+
+                if (@params.Count() > 2 && @params.ContainsKey("value") && @params.ContainsKey("scores"))
                 {
-                    int.TryParse(dictionary["value"], out v);
-                    scoring.Add(new score(dictionary["name"], dictionary["scores"], v));
-                    chosen = scoring.Count()-1;
+                    int.TryParse(@params["value"], out v);
+                    scoring.Add(new score(@params["name"], @params["scores"], v));
+                    chosen = scoring.Count() - 1;
                 }
             }
-            else if (parameters.Count() > 2 && dictionary.ContainsKey("value") && dictionary.ContainsKey("scores"))
+            else if (@params.Count() > 2 && @params.ContainsKey("value") && @params.ContainsKey("scores"))
             {
                 // overwrite current data, again normally would use POST
-                int.TryParse(dictionary["value"], out v);
-                scoring[chosen].scores =  dictionary["scores"];
+                int.TryParse(@params["value"], out v);
+                scoring[chosen].scores = @params["scores"];
                 scoring[chosen].value = v;
             }
 
@@ -187,7 +197,7 @@ namespace webTest
             }
 
             //
-            // example code...JSON strings from class
+            // example code...simple JSON strings from class
             //
             else if (fileString.Contains(".json"))
             {
@@ -207,9 +217,9 @@ namespace webTest
             else
             {
                 processedMessage = "<html>Something processed: {replace this}</html>";
-                for (int i = 0; i < parameters.Count(); i++)
+                foreach (var s in @params.Keys)
                 {
-                    outputString += parameters[i] + ":";
+                    outputString += s + ":" + @params[s] + ",";
                 }
                 processedMessage = processedMessage.Replace("{replace this}", outputString);
             }
@@ -222,12 +232,55 @@ namespace webTest
             return processedMessage;
         }
 
-       //=======================================================================
+        //=======================================================================
         //
-        //  Receive a command message
+        // Process a command request
         //
         //=======================================================================
 
+        // TODO need some try catch blocks here!
+
+        //SS.MessageHandler = ProcessMessage;
+        //    SS.StatusMessage += new SocketEventHandler(StatusEvent);
+        //    SS.ReplyMessage += new SocketEventHandler(ReplyEvent);
+
+        private string http_ProcessCommand(string webMethod, string message)
+        {
+            string processedCommand = "OK";
+            SetStatus("Received cmd:" + message);
+            string outputString = "";
+
+            // =========================================
+            // process the application command type here
+            // =========================================
+            //
+            string fileString = message;
+            int n = message.IndexOf("?");
+            if (n > 0)
+            {
+                fileString = message.Substring(0, n).Replace("//", String.Empty);
+            }
+
+            // get parameters, if there, or empty string
+            string paramString = message.Substring(n + 1);
+            SplitParameters(paramString);
+
+            // Switch on the different commands here
+            // Send to other devices etc
+
+            //
+            // send reply
+            //
+
+            SetStatus("Process Reply:" + processedCommand);
+            return processedCommand;
+        }
+
+        //=======================================================================
+        //
+        //  Receive a command event
+        //
+        //=======================================================================
 
         /// <summary>
         /// Event handler for returned messages

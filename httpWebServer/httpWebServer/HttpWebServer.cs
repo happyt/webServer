@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Net;
 using System.IO;
+using System.Text.RegularExpressions;
 
 namespace httpWebServer
 {
@@ -31,7 +32,7 @@ namespace httpWebServer
         private string info = "Full source at https://github.com/happyt/webServer";
 
         private HttpListener listener;
-        public string portNumber = "8081";
+        public string portNumber = "8082";
 
         // file type of the processed pages
         public string appFileType = ".lua";
@@ -45,17 +46,24 @@ namespace httpWebServer
         
         private const string rootPath = @"./web";
         private const string defaultPage = @"default.htm";
+        public string[] commandList = { "command", "conquer" };
 
         //===================================================================
 
         // declare a Delegate
         public delegate string ProcessMessage(string type, string message);
         // use a instance of the declared Delegate
-        public ProcessMessage MessageHandler;
+        public ProcessMessage DataHandler;
+
+        // declare a Delegate
+        public delegate string ProcessCommand(string type, string message);
+        // use a instance of the declared Delegate
+        public ProcessCommand CommandHandler;
 
         //===================================================================
 
-        // to raise the message received
+        // to raise an event message to the client
+        // without a message or reply involved (eg timing etc?? not using atm)
         public event clientEventHandler controlMessage;
 
         /// <summary>
@@ -111,6 +119,7 @@ namespace httpWebServer
             string pageString = "";
             string responseType = "text/html";
             string filetype = "";
+            string firstWord = "";
             bool binary = false;
             byte[] buffer;
             int pos;
@@ -123,6 +132,8 @@ namespace httpWebServer
             string path = rootPath + request.RawUrl;
             string webMethod = request.HttpMethod;
             if (path == rootPath + "/") path += defaultPage;
+
+            firstWord = Regex.Match(request.RawUrl, @"\b[A-Za-z]*\b").Value;
 
             filetype = Path.GetExtension(path);
             // take off any parameters at the end of the url
@@ -203,9 +214,9 @@ namespace httpWebServer
                         // should return a text for the response string
 
                         // Deal with the message                    
-                        if (MessageHandler != null)
+                        if (DataHandler != null)
                         {
-                            responseString = MessageHandler(webMethod, pageString);
+                            responseString = DataHandler(webMethod, pageString);
                         }
                         else
                         {
@@ -227,29 +238,35 @@ namespace httpWebServer
             else if (filetype == ".json" || filetype == ".xml" || filetype == ".txt")
             {
                 // Deal with the message                    
-                if (MessageHandler != null)
+                if (DataHandler != null)
                 {
-                    responseString = MessageHandler(webMethod, request.RawUrl);
+                    responseString = DataHandler(webMethod, request.RawUrl);
                 }
                 else
                 {
                     responseString = appErrorResponse;
+                    response.StatusCode = (int)HttpStatusCode.NotFound;
                 }
                 buffer = Encoding.UTF8.GetBytes(responseString);
             }
 
             // check for a command
-            else if ((pos = path.IndexOf("cmd=", 0)) > 0)
-            {
-                string command = path.Substring(pos + 4);
-                RaiseCommand(command);
-                responseString = "<html>OK</html>";
+            else if (Array.IndexOf(commandList, firstWord) >= 0)
+            {                      
+                if (CommandHandler != null)
+                {
+                    responseString = CommandHandler(webMethod, request.RawUrl);
+                }
+                else
+                {
+                    response.StatusCode = (int)HttpStatusCode.NotFound;
+                    responseString = appErrorResponse;
+                }
                 buffer = Encoding.UTF8.GetBytes(responseString);
             }
             else
             {
-                responseString = "<html>Unknown file: " + request.RawUrl + "</html>";
-                RaiseCommand("Unknown");
+                response.StatusCode = (int)HttpStatusCode.NotFound;
                 buffer = Encoding.UTF8.GetBytes(responseString);
             }
             

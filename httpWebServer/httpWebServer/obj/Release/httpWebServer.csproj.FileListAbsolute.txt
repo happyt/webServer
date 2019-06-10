@@ -3,3 +3,9 @@ C:\GitHub\webServer\httpWebServer\httpWebServer\bin\Release\httpWebServer.pdb
 C:\GitHub\webServer\httpWebServer\httpWebServer\obj\Release\httpWebServer.csprojResolveAssemblyReference.cache
 C:\GitHub\webServer\httpWebServer\httpWebServer\obj\Release\httpWebServer.dll
 C:\GitHub\webServer\httpWebServer\httpWebServer\obj\Release\httpWebServer.pdb
+C:\project\dotNet\httpWebServer\httpWebServer\httpWebServer\bin\Release\httpWebServer.dll
+C:\project\dotNet\httpWebServer\httpWebServer\httpWebServer\bin\Release\httpWebServer.pdb
+C:\project\dotNet\httpWebServer\httpWebServer\httpWebServer\obj\Release\httpWebServer.csprojAssemblyReference.cache
+C:\project\dotNet\httpWebServer\httpWebServer\httpWebServer\obj\Release\httpWebServer.csproj.CoreCompileInputs.cache
+C:\project\dotNet\httpWebServer\httpWebServer\httpWebServer\obj\Release\httpWebServer.dll
+C:\project\dotNet\httpWebServer\httpWebServer\httpWebServer\obj\Release\httpWebServer.pdb

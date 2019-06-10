@@ -35,9 +35,10 @@
             // 
             // btnStartStop
             // 
-            this.btnStartStop.Location = new System.Drawing.Point(96, 42);
+            this.btnStartStop.Location = new System.Drawing.Point(192, 81);
+            this.btnStartStop.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnStartStop.Name = "btnStartStop";
-            this.btnStartStop.Size = new System.Drawing.Size(74, 35);
+            this.btnStartStop.Size = new System.Drawing.Size(148, 67);
             this.btnStartStop.TabIndex = 0;
             this.btnStartStop.Text = "Start";
             this.btnStartStop.UseVisualStyleBackColor = true;
@@ -46,29 +47,32 @@
             // labStatus
             // 
             this.labStatus.AutoSize = true;
-            this.labStatus.Location = new System.Drawing.Point(102, 106);
+            this.labStatus.Location = new System.Drawing.Point(204, 204);
+            this.labStatus.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.labStatus.Name = "labStatus";
-            this.labStatus.Size = new System.Drawing.Size(59, 13);
+            this.labStatus.Size = new System.Drawing.Size(119, 25);
             this.labStatus.TabIndex = 1;
             this.labStatus.Text = "status here";
             // 
             // txtHistory
             // 
-            this.txtHistory.Location = new System.Drawing.Point(12, 146);
+            this.txtHistory.Location = new System.Drawing.Point(24, 281);
+            this.txtHistory.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txtHistory.Multiline = true;
             this.txtHistory.Name = "txtHistory";
             this.txtHistory.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtHistory.Size = new System.Drawing.Size(268, 98);
+            this.txtHistory.Size = new System.Drawing.Size(532, 185);
             this.txtHistory.TabIndex = 2;
             // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(302, 266);
+            this.ClientSize = new System.Drawing.Size(604, 508);
             this.Controls.Add(this.txtHistory);
             this.Controls.Add(this.labStatus);
             this.Controls.Add(this.btnStartStop);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "frmMain";
             this.RightToLeftLayout = true;
             this.Text = "Server test";
