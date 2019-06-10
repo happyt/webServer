@@ -74,6 +74,8 @@ namespace webTest
                     http.portNumber = "8081";
                     http.DataHandler = http_ReturnData;
                     http.CommandHandler = http_ProcessCommand;
+                    string[] commands = { "abc", "def" };
+                    http.commandList = commands;         // available commands
                     http.Start();
                     btnStartStop.Text = "Stop http";
                 }
@@ -119,21 +121,24 @@ namespace webTest
         //    SS.StatusMessage += new SocketEventHandler(StatusEvent);
         //    SS.ReplyMessage += new SocketEventHandler(ReplyEvent);
 
-        private string http_ReturnData(string webMethod, string message)
+        private string http_ReturnData(string webMethod, string rawUrl)
         {
-            string processedMessage = message;
-            SetStatus("Received:" + message);
+            string processedMessage = rawUrl;
+            SetStatus("Received:" + rawUrl);
             string outputString = "";
-            string fileString = message;    // default
+            string fileString = rawUrl;    // default
+            string paramString = "";
 
-            int n = message.IndexOf("?");
-            if (n>0)
+            int n = rawUrl.IndexOf("?");
+            if (n > 0)
             {
-                fileString = message.Substring(0, n).Replace("//", String.Empty);
+                fileString = rawUrl.Substring(0, n).Replace("//", String.Empty);
+                if (n > rawUrl.Length)
+                {
+                    paramString = rawUrl.Substring(n + 1);
+                }
             }
-
             // get parameters, if there, or empty string
-            string paramString = message.Substring(n + 1);
             SplitParameters(paramString);
 
             int chosen = 0;

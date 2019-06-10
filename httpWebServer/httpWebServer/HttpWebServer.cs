@@ -40,7 +40,6 @@ namespace httpWebServer
         // if no file found, search for this string
         // raise an event with the command string
         // just reply with the OK reply below
-        public string appCommand = "cmd=";
         public string appCmdResponse = "<html>OK</html>";
         public string appErrorResponse = "<html>No application handler!</html>";
         
